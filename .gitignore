@@ -1,0 +1,77 @@
+# Local secrets (keep sanitized example files versionable)
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets.h
+secrets.json
+credentials.h
+credentials.json
+arduino_secrets.h
+config.local.*
+*.local.ini
+*.pem
+*.key
+*.p12
+*.pfx
+.ssh/
+.aws/
+
+# ESP32 / Arduino / PlatformIO build products and local configuration
+.pio/
+.arduinoIDE/
+arduino-cli.yaml
+sketch.yaml
+sdkconfig
+sdkconfig.old
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.o
+*.a
+*.elf
+*.map
+*.hex
+*.bin
+
+# KiCad local histories, preferences, locks and recovery files
+.history/
+*.kicad_prl
+*.kicad_pcb.lck
+*.kicad_sch.lck
+*.lck
+*-backups/
+_autosave-*
+~*.kicad_*
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+fp-info-cache
+
+# Editors, operating system files, caches and temporary files
+.vscode/
+.idea/
+.vs/
+.cache/
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.log
+~$*
+
+# Original manufacturer bundle: retained locally, redistribution rights
+# for the complete package (manuals, utilities and binaries) unconfirmed.
+/references/hub/display/3.2inch_SPI_Module_ILI9341_MSP3222_MSP3223_V1.0/
