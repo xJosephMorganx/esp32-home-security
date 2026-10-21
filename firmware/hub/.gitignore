@@ -1,0 +1,10 @@
+secrets.h
+radio_secrets.h
+build/
+*.bin
+*.elf
+*.map
+
+whatsapp_secrets.h
+email_secrets.h
+messenger_secrets.h

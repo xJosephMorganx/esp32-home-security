@@ -13,6 +13,7 @@
 - The general conversation handles project coordination and shared decisions. Documentation work belongs in a separate conversation unless the user explicitly requests it here.
 - Do not create new conversations automatically.
 - `firmware/common/` is reserved for the shared protocol and reusable components. Coordinate changes affecting multiple modules through the general conversation, explain compatibility impact, and avoid silently changing the contract from a single-module task.
+- Door/hub ESP-NOW integration must use `firmware/common/PROTOCOL.md` and the shared `DomoticaProtocol` library in `firmware/common/src/`. The v1 contract includes automatic channel recovery, encrypted provisioned peers, bidirectional liveness, and application acknowledgement through STATE_SYNC. Do not duplicate or independently redefine the wire format. The current hub UI demo must publish UNKNOWN until a real global-state controller is integrated.
 
 ## Read only the relevant context
 

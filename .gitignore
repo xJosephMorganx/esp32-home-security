@@ -3,11 +3,15 @@
 .env.*
 !.env.example
 !.env.sample
-secrets.h
-secrets.json
-credentials.h
-credentials.json
-arduino_secrets.h
+# Ignore private configuration variants; keep sanitized templates available.
+secrets.*
+*_secrets.*
+credentials.*
+*_credentials.*
+!secrets.example.*
+!*_secrets.example.*
+!credentials.example.*
+!*_credentials.example.*
 config.local.*
 *.local.ini
 *.pem
@@ -72,6 +76,7 @@ Desktop.ini
 *.log
 ~$*
 
-# Original manufacturer bundle: retained locally, redistribution rights
-# for the complete package (manuals, utilities and binaries) unconfirmed.
-/references/hub/display/3.2inch_SPI_Module_ILI9341_MSP3222_MSP3223_V1.0/
+# Local-only project folders
+/escuela/
+/docs/
+/references/
