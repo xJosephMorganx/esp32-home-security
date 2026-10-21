@@ -76,7 +76,8 @@ Desktop.ini
 *.log
 ~$*
 
-# Local-only project folders
+# Local-only project instructions and folders
+/AGENTS.md
 /escuela/
 /docs/
 /references/
